@@ -6,7 +6,7 @@ Before you begin, ensure you have the following prerequisites:
 
 - Kubernetes EKS cluster set up on AWS
 - `kubectl` command-line tool installed
-- update the  kubeconfig file for an Amazon EKS cluster to local 
+- update the  kubeconfig file for an Amazon EKS cluster to local (Note - Required AWS cli access)
     
         aws eks update-kubeconfig --region region-code --name my-cluster
 - Setup metrics server in k8s cluster for  Horizontal Pod Autoscaler (https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html)
