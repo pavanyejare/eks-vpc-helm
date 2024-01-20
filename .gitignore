@@ -6,6 +6,8 @@ terraform/eks/.terraform
 terraform/eks/.terraform/*
 terraform/vpc/.terraform/
 terraform/vpc/.terraform/*
+terraform/vpc/.terraform.lock.hcl
+*/.terraform.lock.hcl
 
 # .tfstate files
 *.tfstate

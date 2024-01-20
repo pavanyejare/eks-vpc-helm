@@ -59,11 +59,11 @@ To setup eks we need to run vpc first
                 key     = "<VPC_State_File_Name>"
             }
         }
-        
+
 ## Usage
 To create the VPC and associated resources run the follwing command
 
-        cd vpc 
+        cd eks 
         terraform init
         terraform apply
     
