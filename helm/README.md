@@ -10,6 +10,9 @@ Before you begin, ensure you have the following prerequisites:
     
         aws eks update-kubeconfig --region region-code --name my-cluster
 - Setup metrics server in k8s cluster for  Horizontal Pod Autoscaler (https://docs.aws.amazon.com/eks/latest/userguide/metrics-server.html)
+
+          kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+  
 - setup helm demon on you local machine (https://helm.sh/docs/intro/install/)
 
 ## k8s resources used 
@@ -35,7 +38,7 @@ To deploy wordpress cluster on kubernet cluster follow the below steps
         helm install wordpress -f values.yaml .
 ### Delete/Destroy 
         cd helm
-        helm install wordpress
+        helm uninstall wordpress
 
 
 # Troubleshooting 
